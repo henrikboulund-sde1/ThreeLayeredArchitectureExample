@@ -1,15 +1,12 @@
 package dk.easv.be;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * This class takes care of everything according to historical calculations.
  * */
 public class History {
-    private double Value;
-    private double Vat;
-    private double Result;
+    private final double Value;
+    private final double Vat;
+    private final double Result;
 
     public double GetValue()
     {

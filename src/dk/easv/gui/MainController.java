@@ -22,8 +22,8 @@ public class MainController {
     @FXML
     private Label lblResult;
 
-    private CalculatorLogic logic = new CalculatorLogic();
-    private HistoryLogic historyLogic = new HistoryLogic();
+    private final CalculatorLogic logic = new CalculatorLogic();
+    private final HistoryLogic historyLogic = new HistoryLogic();
 
     public void btnOnCalculate(ActionEvent actionEvent) {
         /*In this section we convert the values from the two text fields to int. Just so it is ready for our logical layer */
