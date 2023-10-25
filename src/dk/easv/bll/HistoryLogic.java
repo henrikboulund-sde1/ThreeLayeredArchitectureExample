@@ -24,7 +24,14 @@ public class HistoryLogic {
      */
     public History GetLatestHistory()
     {
-        return historyArray.get(historyArray.size() - 2);
+        if(historyArray.size() == 1)
+        {
+            return historyArray.get(0);
+        }
+        else
+        {
+            return historyArray.get(historyArray.size() - 2);
+        }
     }
 
     /**
